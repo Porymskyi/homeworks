@@ -2,26 +2,30 @@
     text-align: center;
     font-weight: bold;
 }
-.body-block {
+.body-block  {
     display: flex;
     flex-flow: row wrap;
     text-align: center;
     font-weight: bold;
     padding: 10px;
     background: blue;
+ }
+.container > * {
+    flex: 1 auto;
+    text-align: center;
 }
 .body-block > * {
-    padding: 40px 80px;
-    flex: 1 auto;
+    height: 100px;
 }
 .header, .footer {
     background:darkgrey;
     margin: 5px;
-    padding: 40px;
+    padding: 50px;
 }
+
 .block-1 {
     background: tomato;
-}
+ }
 .block-2 {
     background: blueviolet;
 }
@@ -35,43 +39,35 @@
     background: deepskyblue;
 }
 @media all and (min-width: 320px) {
-
-
     .block-1 {
         order: 1;
         flex:  100%;
     }
     .block-2 {
         order: 2;
-
+        flex:  100%;
     }
     .block-3 {
         order: 3;
         flex:  100%;
     }
     .block-4 {
-        order: 5;
-        flex:  100%;
-    }
-    .block-5 {
         order: 4;
         flex:  100%;
     }
-    .footer {
-        order: 6;
+    .block-5 {
+        order: 5;
         flex:  100%;
     }
 }
 @media all and (min-width: 768px) {
-
-
     .block-1 {
         order: 1;
         flex:  50%;
     }
     .block-2 {
         order: 2;
-
+        flex:  50%;
     }
     .block-3 {
         order: 3;
@@ -85,44 +81,29 @@
         order: 4;
         flex:  50%;
     }
-    .footer {
-        order: 6;
-        flex:  50%;
-    }
 }
 @media all and (min-width: 1024px) {
-
-    .block-1 {
+      .block-1 {
         order: 1;
-        flex: 35%;
+        flex: 30%;
     }
-
     .block-2 {
         order: 2;
-        flex: 35%;
+        flex: 30%;
     }
-
     .block-3 {
         order: 3;
-        flex: 35%;
+        flex: 30%;
     }
-
     .block-4 {
         order: 4;
         flex: 50%;
     }
-
     .block-5 {
         order: 5;
         flex: 50%;
     }
-
-    .footer {
-        order: 6;
-
-    }
 }
-
 body {
     padding: 1em;
 }

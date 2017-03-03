@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var a = prompt("Введите первое число", "0");
+        var b = prompt("Введите второе число", "0");
+        var parsA = parseInt(a);
+        var parsB = parseInt(b);
+        var parsSum = parsA + parsB;
+        var sum = +a + +b; // Сложение без parse
+        var mult = a * b;
+        var sub = a - b;
+        var dev = a / b;
+        var mod = a % b;
+        var squ = Math.pow(a,b);
+
+        document.write("Сложение: ",parsSum, "<br>");
+        document.write("Умножение: ",mult,"<br>");
+        document.write("Вычитание: ",sub,"<br>");
+        document.write("Деление: ",dev,"<br>");
+        document.write("Деление по модулю: ",mod,"<br>");
+        document.write("Возведение в степень: ",squ,"<br>");
+        document.write("Сложение  без parse: ",sum, "<br>");
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

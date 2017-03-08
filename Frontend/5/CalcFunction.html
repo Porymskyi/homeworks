@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var a = +prompt("Введите первое число", "0");
+        var b = +prompt("Введите второе число", "0");
+        function myCalc(x,y) {
+            var sum = x + y;
+            var mult = x * y;
+            var sub = x - y;
+            var dev = x / y;
+            var mod = x % y;
+            var squ = Math.pow(x,y);
+
+            document.write("Сложение : ",sum, "<br>");
+            document.write("Умножение: ",mult,"<br>");
+            document.write("Вычитание: ",sub,"<br>");
+            document.write("Деление: ",dev,"<br>");
+            document.write("Деление по модулю: ",mod,"<br>");
+            document.write("Возведение в степень: ",squ,"<br>");
+
+        }
+        myCalc(a,b);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

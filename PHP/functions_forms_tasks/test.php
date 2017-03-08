@@ -6,7 +6,7 @@
 </head>
 <body>
 <p>При отправке формы скрипт должен выдавать только те слова, которые есть и в первом и во втором поле ввода.</p>
-<form action="1.php">
+<form >
     <input type="textarea" name="text1">
     <input type="textarea" name="text2">
     <input type="submit" value="Sent">

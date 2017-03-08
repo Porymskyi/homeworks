@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function sum(a, b) {
+            return a + b;
+        }
+        function sab(a, b) {
+            return a - b;
+        }
+        function mul(a, b) {
+            return a * b;
+        }
+        function div(a, b) {
+            return a / b;
+        }
+        var nam1 =  +prompt("Введите первое число");
+        var operation = prompt("Введите знак операции + - * / ");
+        var nam2 =  +prompt("Введите второе число");
+        var res = undefined;
+
+        switch (operation) {
+            case "+" :
+                res = sum(nam1, nam2);
+                break;
+            case "-":
+                res = sab(nam1, nam2);
+                break;
+            case "*" :
+                res = mul(nam1, nam2);
+                break;
+            case "/" :
+                res = div(nam1, nam2);
+                break;
+            default :
+                document.write(operation + "не являэться арефметическим знаком!");
+        }
+
+        if (res != undefined) {
+            document.write("<p>" + nam1 + " " + operation + " " + nam2 + " = " + res);
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

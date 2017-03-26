@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script>
+    var  Programer = {
+        name: prompt("Введите имя",""),
+        age: prompt("Введите возраст",""),
+        position: prompt("Введите должность",""),
+        lengs: prompt("Введите каким языком владеете",""),
+        prof: prompt("Ваша профессия",""),
+
+        sey: function () {
+            document.write("<pre> Ваше имя: " + this.name + "<br/>");
+            document.write("<pre> Ваш возраст: " + this.age + "<br/>");
+            document.write("<pre> Ваша должность: " + this.position + "<br/>");
+            document.write("<pre> Ваш язык: " + this.lengs + "<br/>");
+            document.write("<pre> Ваша профессия: " + this.prof + "<hr/>");
+        },
+        changeProf: function (pro) {
+            this.prof = pro;
+        }
+    }
+    document.write(Programer.sey());
+    Programer.changeProf("Програмист JS");
+    Programer.sey();
+
+</script>
+</body>
+</html>

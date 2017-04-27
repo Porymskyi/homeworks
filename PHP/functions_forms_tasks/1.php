@@ -10,9 +10,18 @@
     <input type="submit" value="OK">
 </form>
 <?php
-function  getCommonWords($a, $b){
-
+class SimpleClass{
+//some code
 }
+$instance = new SimpleClass();
+$assigned = $instance;
+$reference =& $instance;
+$instance->var = 'какое-то значение';
+$instance = null;
+var_dump($instance);
+var_dump($reference);
+var_dump($assigned);
+
 ?>
 </body>
 </html>

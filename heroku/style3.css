@@ -1,0 +1,129 @@
+.flex {
+    display: flex;
+    justify-content: center;
+}
+.card-container-fruit  {
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    background: none;
+    color: red;
+    text-align: center;
+    line-height: 150px;
+
+
+}
+.card_f {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+
+}
+.card_f:hover {
+    transform: translate(-25px,25px) rotateY(180deg);
+}
+.card_f .side_f {
+    backface-visibility: hidden;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    font-style: italic;
+    font-size: 20px;
+}
+.card_f .back {
+    background: yellow;
+    color: red;
+    line-height: 30px;
+    text-align: center;
+    transform: rotatey(180deg);
+    font-style: normal;
+    font-size: 20px;
+}
+
+.card-container-vegetables{
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    background: none;
+    color: limegreen;
+    text-align: center;
+    line-height: 150px;
+
+
+}
+.card_v:hover {
+    transform: translate(0px,25px) rotatex(180deg);
+}
+.card_v {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+.card_v .side_v {
+    backface-visibility: hidden;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    font-style: italic;
+    font-size: 20px;
+}
+.card_v .back {
+    background: yellow;
+    color: limegreen;
+    line-height: 30px;
+    text-align: center;
+    transform: rotatex(180deg);
+    font-style: normal;
+    font-size: 20px;
+}
+
+.card-container-berries{
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    background: none;
+    color: darkviolet;
+    text-align: center;
+    line-height: 150px;
+
+
+}
+.card_b:hover {
+    transform: translate(25px, 25px) rotatey(-180deg);
+    }
+.card_b {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+.card_b .side_b {
+    backface-visibility: hidden;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    font-style: italic;
+    font-size: 20px;
+
+}
+.card_b .back {
+    background: yellow;
+    color: darkviolet;
+    line-height: 30px;
+    text-align: center;
+    transform: rotatey(-180deg);
+    font-style: normal;
+    font-size: 20px;
+
+}
